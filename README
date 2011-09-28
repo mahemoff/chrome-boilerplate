@@ -17,19 +17,19 @@ CUSTOMIZATION
 
   By default, most things are commented out - uncomment them to make them active.
 
-  UI EXPOSURE
+  UI Exposure:
 
     Your extension can be an app, an action (address bar popup), or a theme,
     but it can only be one of these. Or if it does other stuff, maybe it won't
     do any at all. So at most only one of these can be uncommented.
 
-  PERMISSIONS
+  Permissions:
   
     For convenience, these are mostly selected by default (except "experimental",
     as it requires you run Chrome wiht a special flag). Be sure to comment out
     what you don't need - i.e., most of them - before distributing your extension.
 
-  LOCALES 
+  Locales: 
 
     A basic locale setup is included, with English declared as the default
     language. This won't do any harm even if you're not planning to localize your app.
