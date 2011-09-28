@@ -10,7 +10,7 @@ INSTALLATION
 
   The boilerplate works out of the box, so start by installing it in Chrome:
 
-  - git clone https://github.com/mahemoff/chrome-boilerplate.git my-project-name
+  - git clone git://github.com/mahemoff/chrome-boilerplate.git my-project-name
   - Visit chrome://extensions and expand "Development mode" (top right).
   - Choose "Load unpacked extension ..." and point to the new project directory.
   - It's installed! You should see a new button in your address bar. Click it!
