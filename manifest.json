@@ -135,7 +135,7 @@
     {
       "matches": ["http://www.google.com/*"],
       "css": ["src/contentStyle.css"],
-      "js": ["lib/jquery.js", "src/contentScript.js"]
+      "js": ["lib/jquery.min.js", "src/contentScript.js"]
     }
   ],
   */
