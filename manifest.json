@@ -1,0 +1,161 @@
+{
+
+  "name": "The Latest",
+  "version": "0.1",
+  "description": "Get the Latest news straight from your address bar",
+  "icons": { "16": "icons/icon16.png",
+             "48": "icons/icon48.png",
+            "128": "icons/icon128.png" },
+  "default_locale": "en",
+
+  /*****************************************************************************
+   DECLARE AT MOST ONE OF THE FOLLOWING UI EXPOSURES
+   (A SAMPLE BROWSER ACTION IS PROVIDED BY DEFAULT)
+   ****************************************************************************/
+
+  // http://code.google.com/chrome/extensions/browserAction.html
+  "browser_action": {
+    "default_icon":  "icons/icon19.png", // optional
+    "default_title": "Action Title",     // optional; shown in tooltip
+    "default_popup": "src/popup.html"    // optional
+  },
+
+  // http://code.google.com/chrome/extensions/pageAction.html
+  /*
+  "page_action": {
+    "default_icon":  "icons/icon19.png", // optional
+    "default_title": "Action Title",     // optional; shown in tooltip
+    "default_popup": "src/popup.html"    // optional
+  },
+  */
+
+  // http://code.google.com/chrome/extensions/themes.html
+  /*
+  "theme": {
+    "images" : {
+      "theme_frame" : "images/theme_frame_camo.png",
+      "theme_frame_overlay" : "images/theme_frame_stripe.png",
+      "theme_toolbar" : "images/theme_toolbar_camo.png",
+      "theme_ntp_background" : "images/theme_ntp_background_norepeat.png",
+      "theme_ntp_attribution" : "images/attribution.png"
+    },
+    "colors" : {
+      "frame" : [71, 105, 91],
+      "toolbar" : [207, 221, 192],
+      "ntp_text" : [20, 40, 0],
+      "ntp_link" : [36, 70, 0],
+      "ntp_section" : [207, 221, 192],
+      "button_background" : [255, 255, 255]
+    },
+    "tints" : {
+      "buttons" : [0.33, 0.5, 0.47]
+    },
+    "properties" : {
+      "ntp_background_alignment" : "bottom"
+    }
+  }
+  */
+
+  // HOSTED APP
+  // http://code.google.com/chrome/apps/docs/developers_guide.html
+  // NOTE: Hosted apps have limited access to many features in this file
+  /*
+  "app": {
+    "urls": [
+      "*://mail.google.com/mail/",
+      "*://www.google.com/mail/"
+    ],
+    "launch": {
+      "web_url": "http://mail.google.com/mail/"
+    }
+  },
+  */
+
+  // PACKAGED APP
+  // http://code.google.com/chrome/extensions/apps.html
+  /*
+  "app": {
+    "launch": {
+      "local_path": "src/main.html"
+    }
+  },
+  */
+
+  /*****************************************************************************
+   PERMISSIONS
+   ****************************************************************************/
+
+  // http://code.google.com/chrome/extensions/manifest.html#permissions
+  "permissions": [
+    "*://*.google.com", // Misc: http://goo.gl/CPeqK, XHR: http://goo.gl/U3Vev
+    "bookmarks", // http://code.google.com/chrome/extensions/bookmarks.html
+    "chrome://favicon/",
+    "clipboardRead", // document.execCommand('paste').
+    "clipboardWrite", // document.execCommand('copy' OR 'cut')
+    "contextMenus", //http:///code.google.com/chrome/extensions/contextMenus.html
+    "cookies", // http://code.google.com/chrome/extensions/cookies.html
+    // "experimental", // http://code.google.com/chrome/extensions/dev/experimental.html
+    "fileBrowserHandler", // http://goo.gl/GqbrP
+    "geolocation", // http://dev.w3.org/geo/api/spec-source.html
+    "history", // http://code.google.com/chrome/extensions/history.html
+    "idle", // http://code.google.com/chrome/extensions/idle.html
+    "management", // http://code.google.com/chrome/extensions/management.html
+    "notifications", // code.google.com/chrome/extensions/notifications.html
+    "tabs", // http://code.google.com/chrome/extensions/tabs.html +windows.html
+    "tts", // http://code.google.com/chrome/extensions/tts.html
+    "ttsEngine", // http://code.google.com/chrome/extensions/ttsEngine.html
+    "unlimitedStorage"
+  ],
+
+  /*****************************************************************************
+   CHANGING CHROME'S CHROME
+   ****************************************************************************/
+
+  // http://code.google.com/chrome/extensions/omnibox.html
+  // "omnibox": { "keyword" : "aaron" },
+  // "icons": { "16": "16-full-color.png" }
+
+  // http://code.google.com/chrome/extensions/options.html
+  // "options_page": "options.html",
+
+  // http://code.google.com/chrome/extensions/override.html
+  // pageToOverride is one of: bookmarks history newtab
+  // "chrome_url_overrides" : { "pageToOverride": "myPage.html", } 
+
+  /*****************************************************************************
+   IMPLEMENTING THE INNARDS OF YOUR EXTENSION
+   ****************************************************************************/
+
+  // http://code.google.com/chrome/extensions/background_pages.html */
+  // "background_page": "background.html",
+
+  // http://code.google.com/chrome/extensions/content_scripts.html
+  /*
+  "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*"],
+      "css": ["src/contentStyle.css"],
+      "js": ["lib/jquery.js", "src/contentScript.js"]
+    }
+  ],
+  */
+
+  // http://code.google.com/chrome/extensions/npapi.html
+  /*
+  "plugins": [
+    { "path": "content_plugin.dll", "public": true },
+    { "path": "extension_plugin.dll" }
+  ],
+  */
+
+  /*****************************************************************************
+   IMPLEMENTING THE INNARDS OF YOUR EXTENSION
+   ****************************************************************************/
+
+  // http://code.google.com/chrome/extensions/autoupdate.html */
+  // "update_url": "http://myhost.com/mytestextension/updates.xml"
+
+  // leave this here so you don't get trailing comma errors above
+  "null": []
+
+}
