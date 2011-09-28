@@ -1,4 +1,6 @@
-This is a boilerplate for Chrome app, extension, and theme development.
+This is a boilerplate for Chrome app, extension, and theme development. It
+should be easy enough to get started even if you've never built a Chrome
+extension before by following the INSTALLATION notes.
 
 Most of the boilerplate is scribbed together from the docs at
 http://code.google.com/chrome/extensions and the icons auto-generated at
@@ -8,10 +10,10 @@ INSTALLATION
 
   The boilerplate works out of the box, so start by installing it in Chrome:
 
-  - Visit chrome://extensions
-  - Ensure you're in development mode
-  - Choose "Load unpacked extension ..." and point to this directory.
-  - You should see a new button in your address bar. Click it for the latest news.
+  - git clone https://github.com/mahemoff/chrome-boilerplate.git my-project-name
+  - Visit chrome://extensions and expand "Development mode" (top right).
+  - Choose "Load unpacked extension ..." and point to the new project directory.
+  - It's installed! You should see a new button in your address bar. Click it!
 
 CUSTOMIZATION
 
