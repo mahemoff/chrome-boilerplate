@@ -122,6 +122,10 @@
   // pageToOverride is one of: bookmarks history newtab
   // "chrome_url_overrides" : { "pageToOverride": "myPage.html", } 
 
+  // http://code.google.com/chrome/extensions/dev/experimental.devtools.html
+  // Needs "experimental" permission
+  // "devtools_page": "devtools.html",
+
   /*****************************************************************************
    IMPLEMENTING THE INNARDS OF YOUR EXTENSION
    ****************************************************************************/
@@ -135,7 +139,7 @@
     {
       "matches": ["http://www.google.com/*"],
       "css": ["src/contentStyle.css"],
-      "js": ["lib/jquery.js", "src/contentScript.js"]
+      "js": ["lib/jquery.min.js", "src/contentScript.js"]
     }
   ],
   */
@@ -149,7 +153,7 @@
   */
 
   /*****************************************************************************
-   IMPLEMENTING THE INNARDS OF YOUR EXTENSION
+   FINISHING AND DISTRIBUTING YOUR EXTENSION
    ****************************************************************************/
 
   // http://code.google.com/chrome/extensions/autoupdate.html */
