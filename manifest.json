@@ -151,6 +151,12 @@
     { "path": "extension_plugin.dll" }
   ],
   */
+  
+  // The new mandatory manifest version
+  "manifest_version": 2,
+   
+  // Our detault twitter example must have these CSP setting in order to work ;) 
+  "content_security_policy": "script-src https://api.twitter.com; object-src 'self'"
 
   /*****************************************************************************
    FINISHING AND DISTRIBUTING YOUR EXTENSION
