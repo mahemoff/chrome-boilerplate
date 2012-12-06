@@ -1,5 +1,5 @@
 {
-
+  "manifest_version": 2,
   "name": "The Latest",
   "version": "0.1",
   "description": "Get the Latest news straight from your address bar",
