@@ -28,7 +28,7 @@ CUSTOMIZATION
   Permissions:
   
     For convenience, these are mostly selected by default (except "experimental",
-    as it requires you run Chrome wiht a special flag). Be sure to comment out
+    as it requires you run Chrome with a special flag). Be sure to comment out
     what you don't need - i.e., most of them - before distributing your extension.
 
   Locales: 
