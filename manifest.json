@@ -107,6 +107,10 @@
     "unlimitedStorage"
   ],
 
+  // CSP - We need to add twitter API so the default code will work
+  // http://developer.chrome.com/extensions/contentSecurityPolicy.html
+  "content_security_policy": "script-src https://api.twitter.com; object-src 'self'",
+
   /*****************************************************************************
    CHANGING CHROME'S CHROME
    ****************************************************************************/
@@ -151,7 +155,10 @@
     { "path": "extension_plugin.dll" }
   ],
   */
-
+  
+  // The new mandatory manifest version
+  "manifest_version": 2,
+   
   /*****************************************************************************
    FINISHING AND DISTRIBUTING YOUR EXTENSION
    ****************************************************************************/
@@ -159,7 +166,5 @@
   // http://code.google.com/chrome/extensions/autoupdate.html */
   // "update_url": "http://myhost.com/mytestextension/updates.xml"
 
-  // leave this here so you don't get trailing comma errors above
-  "null": []
 
 }
