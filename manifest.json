@@ -157,7 +157,7 @@
   */
   
   // The new mandatory manifest version
-  "manifest_version": 2,
+  "manifest_version": 2
    
   /*****************************************************************************
    FINISHING AND DISTRIBUTING YOUR EXTENSION
