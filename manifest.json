@@ -8,10 +8,10 @@
             "128": "icons/icon128.png" },
   "default_locale": "en",
 
-  /*****************************************************************************
-   DECLARE AT MOST ONE OF THE FOLLOWING UI EXPOSURES
-   (A SAMPLE BROWSER ACTION IS PROVIDED BY DEFAULT)
-   ****************************************************************************/
+  //============================================================================
+  // DECLARE AT MOST ONE OF THE FOLLOWING UI EXPOSURES
+  // (A SAMPLE BROWSER ACTION IS PROVIDED BY DEFAULT)
+  //============================================================================
 
   // http://code.google.com/chrome/extensions/browserAction.html
   "browser_action": {
@@ -81,9 +81,9 @@
   },
   */
 
-  /*****************************************************************************
-   PERMISSIONS
-   ****************************************************************************/
+  //============================================================================
+  // PERMISSIONS
+  //============================================================================
 
   // http://code.google.com/chrome/extensions/manifest.html#permissions
   "permissions": [
@@ -111,9 +111,9 @@
   // http://developer.chrome.com/extensions/contentSecurityPolicy.html
   "content_security_policy": "script-src https://api.twitter.com; object-src 'self'",
 
-  /*****************************************************************************
-   CHANGING CHROME'S CHROME
-   ****************************************************************************/
+  //============================================================================
+  // CHANGING CHROME'S CHROME
+  //============================================================================
 
   // http://code.google.com/chrome/extensions/omnibox.html
   // "omnibox": { "keyword" : "aaron" },
@@ -130,9 +130,9 @@
   // Needs "experimental" permission
   // "devtools_page": "devtools.html",
 
-  /*****************************************************************************
-   IMPLEMENTING THE INNARDS OF YOUR EXTENSION
-   ****************************************************************************/
+  //============================================================================
+  // IMPLEMENTING THE INNARDS OF YOUR EXTENSION
+  //============================================================================
 
   // http://code.google.com/chrome/extensions/background_pages.html */
   // "background_page": "background.html",
@@ -155,13 +155,13 @@
     { "path": "extension_plugin.dll" }
   ],
   */
-  
+
   // The new mandatory manifest version
   "manifest_version": 2
-   
-  /*****************************************************************************
-   FINISHING AND DISTRIBUTING YOUR EXTENSION
-   ****************************************************************************/
+
+  //============================================================================
+  // FINISHING AND DISTRIBUTING YOUR EXTENSION
+  //============================================================================
 
   // http://code.google.com/chrome/extensions/autoupdate.html */
   // "update_url": "http://myhost.com/mytestextension/updates.xml"
