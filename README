@@ -3,7 +3,7 @@ should be easy enough to get started even if you've never built a Chrome
 extension before by following the INSTALLATION notes.
 
 Most of the boilerplate is scribbed together from the docs at
-http://code.google.com/chrome/extensions and the icons auto-generated at
+https://developer.chrome.com/extensions and the icons auto-generated at
 http://faviconist.com. It's all MIT-licensed.
 
 INSTALLATION
